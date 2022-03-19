@@ -48,12 +48,6 @@
   padding: 0.5rem;
   display: inline-block; }
 
-.btn-green {
-  background: rgba(15, 218, 35, 0.15);
-  color: #fff;
-  padding: 0.5rem;
-  display: block; }
-
 #login {
   background-image: linear-gradient(to bottom, #55fd1a, #40dc19, #2bbb16, #179c12, #007d0d);
   width: 100vw;
@@ -227,6 +221,8 @@ a {
     font-size: 1rem; }
   .main-nav a:hover {
     color: #333; }
+  .main-nav a:current {
+    color: #333; }
   .main-nav ul {
     display: flex; }
     .main-nav ul li {
@@ -338,7 +334,7 @@ a {
       align-items: center;
       text-align: center; }
   #home .showcase {
-    margin: 3rem 1rem; }
+    margin: 2.5rem 1rem; }
     #home .showcase > div:nth-child(1) {
       background: url("../assset/unsplash_l1clu1ZKjSw.png");
       background-repeat: no-repeat;
@@ -374,7 +370,12 @@ a {
           height: 7rem;
           margin: 0.5rem 0;
           padding: 0.5rem; }
-    #home .showcase button a {
-      color: #251d1d;
-      padding: 0.5rem;
-      font-size: 0.7rem; }
+      #home .showcase > div:nth-child(2) > div {
+        display: flex;
+        flex-direction: row-reverse; }
+        #home .showcase > div:nth-child(2) > div button {
+          background: green;
+          border: none;
+          padding: 0.5rem; }
+        #home .showcase > div:nth-child(2) > div a {
+          color: #fff; }

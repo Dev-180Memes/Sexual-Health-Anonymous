@@ -54,6 +54,10 @@ a {
     color: $dark-color;
   }
 
+  a:current {
+    color: $dark-color;
+  }
+
   ul {
     display: flex;
 
@@ -213,7 +217,7 @@ a {
   }
 
   .showcase {
-    margin: 3rem 1rem;
+    margin: 2.5rem 1rem;
 
     & > div:nth-child(1) {
       background: url("../assset/unsplash_l1clu1ZKjSw.png");
@@ -266,17 +270,19 @@ a {
         }
       }
 
-    }
-
-    & button{
-      //  margin-top: -1rem;
-      //  border: none;
-      
-      a{
-        color: rgb(37, 29, 29);
+      & > div{
+        display: flex;
+        flex-direction: row-reverse;
         
-        padding: 0.5rem;
-        font-size: 0.7rem;
+        & button{
+          background: green;
+          border: none;
+          padding: 0.5rem;
+        }
+
+        a{
+          color: #fff;
+        }
       }
     }
   }
