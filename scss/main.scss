@@ -1,0 +1,283 @@
+@import "./utility";
+@import "./config";
+@import "./green-bg";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Encode Sans", sans-serif;
+  background-color: #fff;
+}
+
+ul {
+  list-style: none;
+  font-size: 1rem;
+}
+
+h2,
+h3,
+h4 {
+  text-align: center;
+  align-items: center;
+  font-size: 2rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+//navbar
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  h2 {
+    font-size: 1.5rem;
+    padding: 0.5rem;
+  }
+  .adult {
+    color: $medium-color;
+  }
+
+  a {
+    text-decoration: none;
+    color: $medium-color;
+    font-size: 1rem;
+  }
+
+  a:hover {
+    color: $dark-color;
+  }
+
+  ul {
+    display: flex;
+
+    li {
+      margin: 1rem;
+
+      a:current {
+        color: $dark-color;
+      }
+    }
+  }
+  .expert {
+    padding: 0.5rem;
+    text-align: center;
+    border: 1px $dark-color solid;
+    border-radius: 0.3rem;
+    a:current {
+      color: $dark-color;
+    }
+  }
+}
+//header-home
+#header {
+  &-content {
+    margin: 3rem 5rem;
+    text-align: center;
+
+    h1 {
+      font-size: 3rem;
+    }
+    p {
+      color: #8b8787;
+      margin-top: 25px;
+      line-height: 1.5;
+    }
+  }
+}
+
+//section B:testimonies
+#home-b {
+  text-align: center;
+
+  p {
+    text-align: center;
+    padding: 0.5rem;
+  }
+  .testimonies {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    padding: 1rem;
+
+    & > div {
+      border: 0px $medium-color solid;
+      border-radius: 0.5rem;
+      box-shadow: 0 0 5px 1px $medium-color;
+      padding: 1rem;
+
+      strong {
+        margin: 5rem;
+      }
+
+      p {
+        line-height: 1.5rem;
+        padding-bottom: 1rem;
+      }
+    }
+  }
+}
+
+//footer
+.partner-logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  margin: auto;
+  width: 750px;
+}
+
+//Home
+#home {
+  display: flex;
+  justify-content: space-between;
+  background: #fff;
+  width: 100vw;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+
+  .side-bar {
+    background: $bg-color;
+    width: 12vw;
+    height: 100vh;
+
+    box-sizing: border-box;
+
+    a {
+      color: #fff;
+    }
+    .nav-bar {
+      display: block;
+      background: $bg-color;
+      width: 11vw;
+      height: 100vh;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 3rem 2rem;
+
+      a {
+        font-size: 0.8rem;
+        text-align: center;
+      }
+
+      .logo {
+        color: #fff;
+        font-size: 1.3rem;
+        text-align: center;
+        justify-content: center;
+        width: 100%;
+        & span {
+          color: $dark-color;
+        }
+      }
+
+      ul {
+        margin-top: -13rem;
+        width: 11vw;
+
+        li {
+          width: 100%;
+          padding: 1rem 0 1rem 0;
+
+          a img {
+            width: 1rem;
+            height: auto;
+            align-items: center;
+            text-align: center;
+            margin-top: 0.9rem;
+            margin-right: 0.3rem;
+          }
+        }
+        li:hover {
+          background-color: $light-color;
+          width: 11vw;
+        }
+      }
+    }
+    img {
+      width: 1rem;
+      height: auto;
+      align-items: center;
+      text-align: center;
+    }
+  }
+
+  .showcase {
+    margin: 3rem 1rem;
+
+    & > div:nth-child(1) {
+      background: url("../assset/unsplash_l1clu1ZKjSw.png");
+      background-repeat: no-repeat;
+      width: 100%;
+      height: 240px;
+      border-radius: 1rem;
+      padding: 2rem 2rem;
+      text-align: left;
+      
+      h1{
+        color: #fff;
+        font-size: 2rem;
+        font-weight: bolder;
+      }
+
+      p{
+        color: #fff;
+        padding: 2rem 20rem 2rem 0rem;
+        text-align: left;
+        line-height: 1.3rem;
+      }
+    }
+
+    & > div:nth-child(2){
+      margin: 1rem;
+
+      h1 {
+        font-size: 1.1rem;
+        font-weight: bolder;
+      }
+
+      & form{
+        display: block;
+        margin: 1rem  0;
+        color: $medium-color;
+
+        
+        input{
+          padding: 0.5rem;
+          width: 100%;
+          margin: 0.5rem 0;
+        }
+        
+        textarea{
+          width: 100%;
+          height: 7rem;
+          margin: 0.5rem 0;
+          padding: 0.5rem;
+        }
+      }
+
+    }
+
+    & button{
+      //  margin-top: -1rem;
+      //  border: none;
+      
+      a{
+        color: rgb(37, 29, 29);
+        
+        padding: 0.5rem;
+        font-size: 0.7rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,58 @@
+//utilities
+.container{
+  margin: auto 7rem;
+  overflow: hidden;
+}
+
+.lead{
+  text-align: center;
+  padding: 0.5rem;
+  color: rgb(139, 135, 135);
+}
+
+.primary{
+  color: #ffff;
+  padding: 1rem;
+  line-height: 1.5rem;
+}
+
+.nav-icon{
+  color: #fff;
+}
+
+.nav-link{
+  color: #fff;
+}
+
+.center-text{
+  text-align: center;
+}
+
+.section-title{
+  padding: 0.5rem 0;
+}
+
+//padding
+.py-2{ padding: 1rem 0;}
+.py-3{ padding: 1.5rem 0;}
+.py-4{ padding: 2rem 0;}
+
+//margin
+.my-2{ margin: 1rem 0;}
+.my-3{ margin: 1.5rem 0;}
+.my-4{ margin: 2rem 0;}
+
+.btn-dark{
+  background:#333;
+  color: #fff;
+  padding: 0.5rem;
+  display: inline-block;
+}
+
+.btn-green{
+  background: rgba(15, 218, 35, 0.15);
+  color: #fff;
+  padding: 0.5rem;
+  display: block;
+}
+
